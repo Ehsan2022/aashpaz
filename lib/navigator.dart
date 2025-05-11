@@ -39,6 +39,7 @@ class _NavigationState extends State<Navigation> {
         },
         items: <BottomNavyBarItem>[
           BottomNavyBarItem(
+                        activeColor: const Color.fromARGB(255, 199, 218, 228) ,
             icon: const Icon(
               Icons.window,
               color: Colors.white,
@@ -49,26 +50,31 @@ class _NavigationState extends State<Navigation> {
             ),
           ),
           BottomNavyBarItem(
+                        activeColor: const Color.fromARGB(255, 199, 218, 228) ,
+
             icon: const Icon(
-              Icons.favorite,
+              Icons.add_box_rounded,
               color: Colors.white,
             ),
             title: const Text(
-              'پسندیده ها',
+              'غذای جدید',
               style: TextStyle(color: Colors.white),
             ),
           ),
           BottomNavyBarItem(
+            activeColor: const Color.fromARGB(255, 199, 218, 228) ,
             icon: const Icon(
               Icons.fastfood,
               color: Colors.white,
             ),
             title: const Text(
-              'غذاهای بیشتر',
+              'بیشتر',
               style: TextStyle(color: Colors.white),
             ),
           ),
            BottomNavyBarItem(
+                        activeColor: const Color.fromARGB(255, 199, 218, 228) ,
+
             icon: CircleAvatar(
               radius: 15,
               backgroundImage: AssetImage("afg.jpeg"),
