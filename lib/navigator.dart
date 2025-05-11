@@ -25,30 +25,6 @@ class _NavigationState extends State<Navigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(" آشپـــــــــــــز",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-        backgroundColor:const Color.fromARGB(255, 9, 24, 32),
-        toolbarHeight: 70,
-        actions: [
-          PopupMenuButton(
-            iconColor: Colors.white,
-              itemBuilder: (cont) => [
-                    const PopupMenuItem(
-                      child: Text('اشتراک'),
-                    ),
-                    PopupMenuItem(
-                      child: const Text('درباره'),
-                      onTap: () {
-                        Navigator.pushNamed(context, 'about');
-                      },
-                    ),
-                    const PopupMenuItem(
-                      textStyle: TextStyle(color: Colors.red),
-                      child: Text('خروج'),
-                    ),
-                  ])
-        ],
-      ),
       bottomNavigationBar: BottomNavyBar(
         showElevation: true,
         iconSize: 30,
@@ -93,12 +69,12 @@ class _NavigationState extends State<Navigation> {
             ),
           ),
            BottomNavyBarItem(
-            icon: const Icon(
-              Icons.person,
-              color: Colors.white,
+            icon: CircleAvatar(
+              radius: 15,
+              backgroundImage: AssetImage("afg.jpeg"),
             ),
             title: const Text(
-              'تنظیمات',
+              'پروفایل',
               style: TextStyle(color: Colors.white),
             ),
           ),

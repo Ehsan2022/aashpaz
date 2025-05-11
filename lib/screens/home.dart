@@ -18,6 +18,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor:const Color.fromARGB(255, 9, 24, 32),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          title:Text("سر آشپــــــــــــز",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 20),) ,
+          actions: [
+            IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none),color: Colors.white,iconSize: 30,),
+            IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border),color: Colors.white,iconSize: 30,),
+          ],
+        ),
         body: Column(
           children: <Widget>[
             CarouselSlider(
