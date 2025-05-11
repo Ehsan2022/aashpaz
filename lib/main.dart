@@ -1,6 +1,5 @@
 // ignore_for_file: constant_identifier_names
 
-import 'package:aashpaz/data/class.dart';
 import 'package:aashpaz/navigator.dart';
 import 'package:aashpaz/screens/about.dart';
 import 'package:flutter/material.dart';
@@ -9,11 +8,6 @@ import 'package:hive_flutter/adapters.dart';
 
 const String RecipeBok = "favorites";
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Hive.initFlutter();
-  Hive.registerAdapter(RecipeAdapter());
-  await Hive.openBox<Recipe>(RecipeBok);
-
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
